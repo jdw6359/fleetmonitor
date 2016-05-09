@@ -1,4 +1,4 @@
-class CheckInsController < ApplicationController
+class Api::CheckInsController < ApplicationController
 
   def index
     @check_ins = CheckIn.all

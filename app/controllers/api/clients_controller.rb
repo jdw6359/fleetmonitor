@@ -1,4 +1,4 @@
-class ClientsController < ApplicationController
+class Api::ClientsController < ApplicationController
   before_action :set_client, only: [:show]
 
   def index

@@ -1,4 +1,4 @@
-class DevicesController < ApplicationController
+class Api::DevicesController < ApplicationController
   before_action :set_device, only: [:show]
 
   def index
