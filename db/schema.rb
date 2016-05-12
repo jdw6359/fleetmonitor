@@ -15,8 +15,11 @@ ActiveRecord::Schema.define(version: 20160505232006) do
 
   create_table "check_ins", force: :cascade do |t|
     t.string   "device_id"
+    t.string   "monitoring_version"
+    t.string   "os_version"
+    t.string   "primary_status"
+    t.string   "cell_status"
     t.datetime "check_in_time"
-    t.string   "status"
   end
 
   create_table "clients", force: :cascade do |t|
