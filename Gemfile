@@ -41,6 +41,9 @@ gem 'pry'
 # Provides randomized data used for seeding dev and test databases
 gem 'faker'
 
+# MySQL adapter for production environment
+gem 'mysql2', '~> 0.3.18'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
