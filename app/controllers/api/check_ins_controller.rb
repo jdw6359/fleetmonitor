@@ -15,6 +15,6 @@ class Api::CheckInsController < ApplicationController
   private
   def check_in_params
     params.permit(:device_id, :monitoring_version, :os_version,
-      :primary_status, :cell_status, :check_in_time)
+      :status, :check_in_time)
   end
 end
