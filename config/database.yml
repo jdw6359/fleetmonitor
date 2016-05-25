@@ -22,12 +22,11 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
-  #adapter: mysql2
-  #encoding: utf8
-  #host: <%= ENV["BINARY_DB_INSTANCE"] %>
-  #port: 3306
-  #database: <%= ENV["BINARY_DB_NAME"] %>
-  #username: <%= ENV["BINARY_DB_USERNAME"] %>
-  #password: <%= ENV["BINARY_DB_PASSWORD"] %>
-  #pool: 5
+  adapter: mysql2
+  encoding: utf8
+  host: <%= ENV["BINARY_DB_INSTANCE"] %>
+  port: 3306
+  database: <%= ENV["BINARY_DB_NAME"] %>
+  username: <%= ENV["BINARY_DB_USERNAME"] %>
+  password: <%= ENV["BINARY_DB_PASSWORD"] %>
+  pool: 5
